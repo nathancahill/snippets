@@ -33,9 +33,11 @@ import urllib2
 from appscript import *
 from bs4 import BeautifulSoup
 
+applications = "/Applications/"
+
 def main():
 	# Loop through Applications folder
-	for currentFile in glob.glob( os.path.join("/Applications/", '*.app') ):
+	for currentFile in glob.glob( os.path.join(applications, '*.app') ):
 	    if os.path.isdir(currentFile):
 	        (name, ext) = os.path.basename(currentFile).split(".app")
 	        print("Searching for " + name + "...")
@@ -51,7 +53,7 @@ def main():
 	        	desc = desc[0].get_text().lstrip(' - ')
 	        	print("Found this: " + desc)
 	        	# Add description to Spotlight Comments (to view, select the application and Command+I)
-	        	file = app("Finder").items[mactypes.Alias("/Applications/" + os.path.basename(currentFile))].comment.set(desc)
+	        	file = app("Finder").items[mactypes.Alias(applications + os.path.basename(currentFile))].comment.set(desc)
 	        	print(" ")
 
 if __name__ == '__main__':
