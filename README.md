@@ -1,4 +1,4 @@
-## app_keywords.py
+# app_keywords.py
 
 Solves the problem of remembering the abstract names of applications on your Mac.
 It scrapes a short description of the app from MacUpdate.com, and saves it to the app's Spotlight comments.
