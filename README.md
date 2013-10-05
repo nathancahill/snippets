@@ -18,6 +18,14 @@ Simply running:
 
 will iterate through the applications in /Applications/ folder. If the application is on MacUpdate.com, it will grab the description and save it to the Spotlight Comments field. You can edit/view this by selecting the application and hitting Command+I.
 
+# app_keywords.py
+
+When dealing with long running processes, especially multiprocessing ones, it's useful to see how many jobs are remaining in the queue. This script prints the remaining number of jobs in a logarithmic scale: as you near the end of the process, logging becomes more frequent.
+
+### Using the script
+
+Integrate the algorithm in your existing queue logic.
+
 # License
 
 Unless otherwise noted in the source file, everything is MIT licensed.
