@@ -23,7 +23,7 @@ Uses numpy and PIL for transforming the image. Install:
 
 Change the variable ```points``` on line 100 to the image points. Pass the image file as the first argument in the command line:
 
-python image_perspective.py my_image.jpg
+    python image_perspective.py my_image.jpg
 
 ---------------------------------------
 
