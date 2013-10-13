@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # encoding: utf-8
 
-# Transforms and image based on the target image corners inside of a bounding box.
+# Transforms an image based on the target image corners inside of a bounding box.
 # Useful for accurately displaying non-georectified satellite imagery in a bounding box.
 # Given a list of points, it determines the 4 corners, the shift from each corner to the bounding box corner,
 # and applies the shift to the image.
