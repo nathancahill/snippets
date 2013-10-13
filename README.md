@@ -1,4 +1,4 @@
-# image_perspective.py
+## Image Perspective
 
 Transforms an image based on the target image corners inside of a bounding box. Useful for accurately displaying non-georectified satellite imagery in a bounding box. Given a list of points, it determines the 4 corners, the shift from each corner to the bounding box corner, and applies the shift to the image.
 
@@ -27,7 +27,7 @@ Change the variable ```points``` on line 100 to the image points. Pass the image
 
 ---------------------------------------
 
-# app_keywords.py
+## App Keywords
 
 Solves the problem of remembering the abstract names of applications on your Mac.
 It scrapes a short description of the app from MacUpdate.com, and saves it to the app's Spotlight comments.
@@ -49,7 +49,7 @@ will iterate through the applications in /Applications/ folder. If the applicati
 
 ---------------------------------------
 
-# log_progress.py
+# Log Progress
 
 When dealing with long running processes, especially multiprocessing ones, it's useful to see how many jobs are remaining in the queue. This script prints the remaining number of jobs in a logarithmic scale: as you near the end of the process, logging becomes more frequent.
 
